@@ -1,0 +1,261 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+	<!-- START ACTIVITY -->
+	<style name="start_button_title" >
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">150dip</item>             
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/start_button_title</item>
+        <item name="android:textSize">@dimen/start_button_title</item>
+        <item name="android:shadowDx">-1</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">1</item>
+        <item name="android:shadowColor">@color/start_button_title_shadow</item>
+    </style>
+    
+	<!--  POPUP WINDOW -->
+	
+	<style name="popup_layout_quote" >
+        <item name="android:padding">15dp</item>
+        <item name="android:background">@color/popup_layout_quote</item>
+    </style>
+    
+	<style name="popup_layout_title" >
+        <item name="android:textStyle">bold</item>
+        <item name="android:text">bold</item>
+        <item name="android:textColor">@color/popup_layout_title</item>
+        <item name="android:textSize">@dimen/popup_layout_title</item>
+    </style>
+    
+    <style name="popup_layout_close" >
+        <item name="android:textColor">@color/popup_layout_close</item>
+        <item name="android:textSize">@dimen/popup_layout_close</item>
+    </style>
+    
+    <style name="popup_button_title" >
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/popup_button_title</item>
+        <item name="android:textSize">@dimen/popup_button_title</item>
+    </style>
+    
+    <style name="popup_button_coins" >
+        <item name="android:textColor">@color/popup_button_coins</item>
+        <item name="android:textSize">@dimen/popup_button_coins</item>
+    </style>
+	
+    <!-- PLAY ACTIVITY -->
+    <style name="play_success_summary_button_text" >
+        <item name="android:textStyle">bold</item>      
+        <item name="android:textColor">@color/play_success_summary_button_text</item>
+        <item name="android:textSize">@dimen/play_success_summary_button_text</item>
+        <item name="android:background">@drawable/button_popup_next</item>
+        <item name="android:gravity">center</item>         
+    </style>
+    
+    
+    <style name="play_success_message" >
+        <item name="android:textStyle">bold</item>      
+        <item name="android:textColor">@color/play_success_message</item>
+        <item name="android:textSize">@dimen/play_success_message</item>
+    </style>
+    
+    <style name="play_success_submessage" >
+        <item name="android:textStyle">bold</item>      
+        <item name="android:textColor">@color/play_success_message</item>
+        <item name="android:textSize">@dimen/play_success_submessage</item>
+    </style>
+    
+    <style name="play_success_quote_message" >
+        <item name="android:textStyle">bold</item>  
+        <item name="android:typeface">serif</item>    
+        <item name="android:textColor">@color/play_success_message</item>
+        <item name="android:textSize">@dimen/play_success_quote_message</item>
+        <item name="android:lineSpacingExtra">5sp</item>
+        <item name="android:paddingRight">0dp</item>
+        <item name="android:paddingLeft">0dp</item>
+    </style>
+    
+    <style name="play_success_quote_person" >
+        <item name="android:textStyle">italic</item>
+        <item name="android:typeface">serif</item>      
+        <item name="android:textColor">@color/play_success_message</item>
+        <item name="android:textSize">@dimen/play_success_quote_person</item>
+    </style>
+    
+    <style name="play_item_letter" >
+        <item name="android:textStyle">bold</item>      
+        <item name="android:textColor">@color/play_item_letter</item>
+        <item name="android:textSize">@dimen/play_item_letter</item>
+    </style>    
+    
+    <style name="play_item_target_letter" >
+        <item name="android:textStyle">bold</item>      
+        <item name="android:textColor">@color/play_item_target_letter</item>
+        <item name="android:textSize">@dimen/play_item_target_letter</item>
+    </style>
+    
+    <style name="play_item_images" >
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_weight">1</item>     
+        <item name="android:layout_height">match_parent</item>                        
+        <item name="android:layout_margin">6dip</item>
+    </style>
+    
+
+    
+    <style name="play_success_summary_score" >
+        <item name="android:textStyle">bold</item>      
+        <item name="android:textColor">@color/play_success_summary_score</item>
+        <item name="android:textSize">@dimen/play_success_summary_score</item>
+    </style>
+    <style name="play_success_summary_scoreVal" >
+        <item name="android:textColor">@color/play_success_summary_scoreVal</item>
+        <item name="android:textSize">@dimen/play_success_summary_scoreVal</item>
+    </style>
+    <style name="play_success_summary_coins" >
+        <item name="android:textStyle">bold</item>      
+        <item name="android:textColor">@color/play_success_summary_coins</item>
+        <item name="android:textSize">@dimen/play_success_summary_coins</item>
+    </style>
+    <style name="play_success_summary_coinsVal" >
+        <item name="android:textColor">@color/play_success_summary_coinsVal</item>
+        <item name="android:textSize">@dimen/play_success_summary_coinsVal</item>
+    </style>
+    
+    
+    <!-- LEVELS ACTIVITY -->
+    <style name="level_item_title" >
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>             
+        <item name="android:textStyle">bold</item>   
+        <item name="android:textColor">@color/level_item_title</item>
+        <item name="android:textSize">@dimen/level_item_title</item>
+        <item name="android:shadowDx">-1</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">1</item>
+        <item name="android:shadowColor">@color/level_item_title_shadow</item>
+    </style>
+    
+    <style name="level_item_score_title" >
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textStyle">bold</item>      
+        <item name="android:textColor">@color/level_item_score_title</item>
+        <item name="android:textSize">@dimen/level_item_score_title</item>
+    </style>
+    
+    <style name="level_item_score_value" >
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>     
+        <item name="android:textColor">@color/level_item_score_value</item>
+        <item name="android:textSize">@dimen/level_item_score_value</item>
+    </style>
+    
+    <style name="level_item_words_title" >
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textStyle">bold</item>   
+        <item name="android:textColor">@color/level_item_words_title</item>
+        <item name="android:textSize">@dimen/level_item_words_title</item>
+    </style>
+    
+    <style name="level_item_words_value" >
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>     
+        <item name="android:textColor">@color/level_item_words_value</item>
+        <item name="android:textSize">@dimen/level_item_words_value</item>
+    </style>
+    
+    <style name="level_item_percentage_value" >
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>     
+        <item name="android:textColor">@color/level_item_percentage_value</item>
+        <item name="android:textSize">@dimen/level_item_percentage_value</item>
+    </style>
+    
+    <!-- disabled -->
+    <style name="level_item_title_disabled" >
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>             
+        <item name="android:textStyle">bold</item>   
+        <item name="android:textColor">@color/level_item_title_disabled</item>
+        <item name="android:textSize">@dimen/level_item_title</item>
+        <item name="android:shadowDx">-1</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">1</item>
+        <item name="android:shadowColor">@color/level_item_title_shadow_disabled</item>
+    </style>
+    
+    <style name="level_item_score_title_disabled" >
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textStyle">bold</item>      
+        <item name="android:textColor">@color/level_item_score_title_disabled</item>
+        <item name="android:textSize">@dimen/level_item_score_title</item>
+    </style>
+    
+    <style name="level_item_score_value_disabled" >
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>     
+        <item name="android:textColor">@color/level_item_score_value_disabled</item>
+        <item name="android:textSize">@dimen/level_item_score_value</item>
+    </style>
+    
+    <style name="level_item_words_title_disabled" >
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textStyle">bold</item>   
+        <item name="android:textColor">@color/level_item_words_title_disabled</item>
+        <item name="android:textSize">@dimen/level_item_words_title</item>
+    </style>
+    
+    <style name="level_item_words_value_disabled" >
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>     
+        <item name="android:textColor">@color/level_item_words_value_disabled</item>
+        <item name="android:textSize">@dimen/level_item_words_value</item>
+    </style>
+    
+    <style name="level_item_percentage_value_disabled" >
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>     
+        <item name="android:textColor">@color/level_item_percentage_value_disabled</item>
+        <item name="android:textSize">@dimen/level_item_percentage_value</item>
+    </style>
+
+    <!-- CATEGORY ACTIVITY -->
+    <style name="category_item_title" >
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>             
+        <item name="android:textStyle">bold</item>   
+        <item name="android:textColor">@color/category_item_title</item>
+        <item name="android:textSize">@dimen/category_item_title</item>
+        <item name="android:shadowDx">-1</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">1</item>
+        <item name="android:shadowColor">@color/category_item_title_shadow</item>
+    </style>
+    
+    <style name="category_item_subtitle" >
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>     
+        <item name="android:textColor">@color/category_item_subtitle</item>
+        <item name="android:textSize">@dimen/category_item_subtitle</item>
+    </style>
+    
+    <!-- GENERAL - TOP BAR style -->
+    <style name="general_top_bar_title" >
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/general_top_bar_title</item>
+        <item name="android:textSize">@dimen/general_top_bar_title</item>
+    </style>
+    
+    <style name="general_top_bar_coins_value" >
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>        
+        <item name="android:textColor">@color/general_top_bar_coins_value</item>
+        <item name="android:textSize">@dimen/general_top_bar_coins_value</item>
+    </style>
+
+</resources>

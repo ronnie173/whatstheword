@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <string name="achievements">Achievements</string>
+    <string name="save">SAVE</string>
+    <string name="close">Close</string>
+    <string name="achievement_icon">Achievement Icon</string>
+    <string name="new_badge">New Badge</string>
+    <string name="no_fun">I don\'t want fun</string>
+    <string name="play_friends">Play Friends</string>
+    <string name="leaderboard">Leaderboard</string>
+    <string name="no_level_load">Could not load levels</string>
+    <string name="no_score_post">Could not post your score</string>
+    <string name="view_full_leaderboard">View full leaderboard</string>
+    <string name="more_dot_dot_dot">More...</string>
+    <string name="retry">Retry</string>
+</resources>

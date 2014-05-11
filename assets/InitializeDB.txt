@@ -1,0 +1,4 @@
+INSERT INTO WORDS (_id, unlocked,solved,score,word,letters,image1,image2,image3,image4,http,link) VALUES (1,1,0,0,'CAT','CUTODKEADUECSKD','pics/cat1.jpg','pics/cat2.jpg','pics/cat3.jpg','pics/cat4.jpg','test','test');
+INSERT INTO WORDS (_id, unlocked,solved,score,word,letters,image1,image2,image3,image4,http,link) VALUES (2,1,0,0,'DOG','GIEUCOLKVNEEDSD','pics/dog1.jpg','pics/dog2.jpg','pics/dog3.png','pics/dog4.jpg','test','test');
+INSERT INTO WORDS (_id, unlocked,solved,score,word,letters,image1,image2,image3,image4,http,link) VALUES (3,1,0,0,'CHILDREN','HOOCNYTRCNILLED','pics/children1.jpg','pics/children2.jpg','pics/children3.jpg','pics/children4.jpg','test','test');
+INSERT INTO WORDS (_id, unlocked,solved,score,word,letters,image1,image2,image3,image4,http,link) VALUES (4,1,0,0,'JESUS','JRTULPMSOESDXWQ','pics/jesus1.jpg','pics/jesus2.jpg','pics/jesus3.jpg','pics/jesus4.jpg','test','test');

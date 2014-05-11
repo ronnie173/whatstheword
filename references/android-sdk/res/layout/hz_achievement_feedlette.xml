@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/HzVerticalBlock" >
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="#ffffff" />
+
+    <LinearLayout style="@style/HzAchievementFeedRow" 
+        android:baselineAligned="false" >
+
+        <RelativeLayout style="@style/HzInline">
+            
+	        <ImageView
+	            android:id="@+id/achievement_icon"
+	            style="@style/HzLargeIcon"
+	            android:contentDescription="@string/achievements"
+	            android:background="#00000000"
+	            android:scaleType="fitCenter"
+	            android:layout_gravity="top"
+	            android:layout_marginLeft="6dp"
+	            android:layout_marginTop="2dp"
+	            android:layout_marginBottom="2dp" />
+	        
+            <ImageView
+                style="@style/HzInline"
+                android:id="@+id/new_badge_icon"
+                android:background="@drawable/hz_badge_new"
+                android:visibility="gone"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="2dp"
+                android:contentDescription="@string/new_badge" />
+        </RelativeLayout>
+
+        <!-- Text -->
+
+        <LinearLayout
+            android:id="@+id/achievement_text"
+            style="@style/HzVerticalBlock"
+            android:layout_width="0dp"
+            android:layout_marginRight="6dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/achievement_name"
+                style="@style/HzAchievementFeedLabel"
+                android:ellipsize="end"
+                android:singleLine="true" />
+
+            <TextView
+                android:id="@+id/achievement_description"
+                style="@style/HzAchievementFeedSublabel"
+                android:ellipsize="end" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="#c6c7cc" />
+
+</LinearLayout>

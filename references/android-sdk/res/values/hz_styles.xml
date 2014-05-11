@@ -1,0 +1,785 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Common styles -->
+    <style name="HzInline">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="HzBlock">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="HzFull">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+    </style>
+
+    <style name="HzVerticalBlock" parent="@style/HzBlock">
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="HzVerticalFull" parent="@style/HzFull">
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="HzHorizontalBlock" parent="@style/HzBlock">
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <!-- Common icon styles -->
+    <style name="HzTinyIcon">
+        <item name="android:layout_width">28dp</item>
+        <item name="android:layout_height">28dp</item>
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <style name="HzSmallIcon" parent="@style/HzTinyIcon">
+        <item name="android:layout_width">32dp</item>
+        <item name="android:layout_height">32dp</item>
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="HzUserFeedIcon" parent="@style/HzSmallIcon">
+        <item name="android:layout_width">46dp</item>
+        <item name="android:layout_height">46dp</item>
+        <item name="android:layout_marginTop">0dp</item>
+        <item name="android:layout_marginLeft">6dp</item>
+    </style>
+
+    <style name="HzMediumIcon" parent="@style/HzSmallIcon">
+        <item name="android:layout_width">48dp</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:padding">3dp</item>
+        <item name="android:background">#fff</item>
+    </style>
+
+    <style name="HzLargeIcon" parent="@style/HzMediumIcon">
+        <item name="android:layout_width">64dp</item>
+        <item name="android:layout_height">64dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+    </style>
+
+    <style name="HzLargeUserImage">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:scaleType">fitCenter</item>
+        <item name="android:adjustViewBounds">true</item>
+    </style>
+
+    <!-- Common button styles -->
+    <style name="HzSmallGreenButton" parent="@style/HzBlock">
+        <item name="android:layout_height">26dp</item>
+        <item name="android:background">@drawable/hz_invite_grn_btn</item>
+        <item name="android:textColor">#FFF</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:shadowDy">-1</item>
+        <item name="android:shadowColor">#305809</item>
+        <item name="android:shadowRadius">0.01</item>
+    </style>
+
+    <style name="HzGreenButton" parent="@style/HzSmallGreenButton">
+        <item name="android:layout_height">38dp</item>
+        <item name="android:background">@drawable/hz_green_button</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:shadowRadius">2</item>
+    </style>
+
+    <style name="HzGreenActionButton" parent="@style/HzSmallGreenButton">
+        <item name="android:layout_height">38dp</item>
+        <item name="android:background">@drawable/hz_green_action_button_drawable</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:shadowRadius">2</item>
+    </style>
+
+    <style name="HzLargeGreenButton" parent="@style/HzGreenButton">
+        <item name="android:layout_height">51dp</item>
+        <item name="android:background">@drawable/hz_green_button</item>
+    </style>
+
+    <style name="HzActionGrayButton" parent="@style/HzSmallGreenButton">
+        <item name="android:layout_height">38dp</item>
+        <item name="android:background">@drawable/hz_button_action_gray_drawable</item>
+        <item name="android:textSize">21sp</item>
+        <item name="android:textColor">#222</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowColor">#fff</item>
+    </style>
+
+    <style name="HzActionGreenButton" parent="@style/HzSmallGreenButton">
+        <item name="android:layout_height">38dp</item>
+        <item name="android:background">@drawable/hz_button_action_green_drawable</item>
+        <item name="android:textSize">21sp</item>
+        <item name="android:textColor">#fff</item>
+        <item name="android:shadowColor">#555</item>
+    </style>
+
+    <!-- New common button styles -->
+
+
+    <!-- <style name="HzFacebookLoginButton" parent="@style/HzBlock"> -->
+    <!-- <item name="android:background">@drawable/btn_facebook_login_drawable</item> -->
+    <!-- <item name="android:layout_height">47dp</item> -->
+    <!-- <item name="android:text">Log in with Facebook"</item> -->
+    <!-- <item name="android:textSize">18dp</item> -->
+    <!-- <item name="android:textColor">#ffffff</item> -->
+    <!-- <item name="android:textStyle">bold</item> -->
+    <!-- <item name="android:shadowColor">#000000</item> -->
+    <!-- <item name="android:shadowDy">-1</item> -->
+    <!-- <item name="android:shadowRadius">0.01</item> -->
+    <!-- <item name="android:gravity">left|center_vertical</item> -->
+    <!-- </style> -->
+
+
+    <!-- <style name="HzGreenDlgButton" parent="@style/HzLoginButton"> -->
+    <!-- <item name="android:background">@drawable/dialog_button_primary</item> -->
+    <!-- <item name="android:paddingLeft">10dp</item> -->
+    <!-- <item name="android:paddingRight">10dp</item> -->
+    <!-- <item name="android:textColor">#FFF</item> -->
+    <!-- <item name="android:textSize">15sp</item> -->
+    <!-- <item name="android:gravity">center</item> -->
+    <!-- </style> -->
+
+
+    <!-- <style name="HzDarkDlgButton" parent="@style/HzGreenDlgButton"> -->
+    <!-- <item name="android:background">@drawable/btn_black_drawable</item> -->
+    <!-- <item name="android:textStyle">normal</item> -->
+    <!-- </style> -->
+
+
+    <!-- <style name="HzEditCheckinSettingsButton" parent="@style/HzDarkDlgButton"> -->
+    <!-- <item name="android:background">@drawable/btn_settings_drawable</item> -->
+    <!-- </style> -->
+
+
+    <!-- Common spinner styles -->
+    <style name="HzLoadMoreButtonSpinner" parent="@android:style/Widget.ProgressBar.Small.Inverse">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <!-- Dialog styles -->
+    <style name="HzDialogSeparator" parent="@style/HzBlock">
+        <item name="android:background">#79869c</item>
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:paddingBottom">4dp</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:textColor">#fefefe</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginBottom">10dp</item>
+    </style>
+
+    <!-- In-game popup styles -->
+    <style name="HzCheckinBannerText" parent="@style/HzInline">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">4dp</item>
+        <item name="android:paddingRight">4dp</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#fff</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:shadowDy">-1</item>
+        <item name="android:shadowColor">#023e82</item>
+        <item name="android:shadowRadius">0.01</item>
+    </style>
+
+    <style name="HzRetroCheckinBannerText" parent="@style/HzInline">
+        <item name="android:layout_height">50dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:paddingLeft">40dp</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#fff</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:shadowDy">-1</item>
+        <item name="android:shadowColor">#bb000000</item>
+        <item name="android:shadowRadius">0.01</item>
+    </style>
+
+    <!-- Load more button for lists -->
+    <style name="HzLoadMoreButton" parent="@style/HzBlock">
+        <item name="android:layout_height">40dp</item>
+        <item name="android:background">@drawable/hz_grouped_stream_bg</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="HzLoadMoreButtonLabel" parent="@style/HzInline">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#79869c</item>
+        <item name="android:text">@string/more_dot_dot_dot</item>
+    </style>
+
+    <!-- Details page styles -->
+    <style name="HzDetailsHeader" parent="@style/HzBlock">
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <!-- Auth splash/login/signup styles -->
+    <style name="HzAuthHeader" parent="@style/HzVerticalBlock">
+        <item name="android:padding">8dp</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+
+    <style name="HzAuthCallToAction" parent="@style/HzInline">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#fff</item>
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+
+    <!-- <style name="HzAuthReasonShiney" parent="@style/HzBlock"> -->
+    <!-- <item name="android:padding">8dp</item> -->
+    <!-- <item name="android:layout_marginBottom">10dp</item> -->
+    <!-- <item name="android:background">@drawable/splash_bg_shiney</item> -->
+    <!-- <item name="android:textColor">#FF000000</item> -->
+    <!-- <item name="android:textSize">14sp</item> -->
+    <!-- </style> -->
+
+
+    <!-- <style name="HzAuthCallToActionLight" parent="@style/HzAuthCallToAction"> -->
+    <!-- <item name="android:gravity">left</item> -->
+    <!-- <item name="android:textColor">#FF4C566C</item> -->
+    <!-- <item name="android:layout_marginBottom">3dp</item> -->
+    <!-- <item name="android:layout_marginTop">5dp</item> -->
+    <!-- <item name="android:textSize">14sp</item> -->
+    <!-- </style> -->
+
+    <style name="HzAuthSellLight" parent="@style/HzInline">
+        <item name="android:textColor">#FF4C566C</item>
+        <item name="android:gravity">left</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:lineSpacingMultiplier">1.2</item>
+    </style>
+
+    <!-- Friends found screen styles -->
+    <style name="HzFriendsFoundTitle" parent="@style/HzBlock">
+        <item name="android:background">#e2ecff</item>
+        <item name="android:padding">15dp</item>
+        <item name="android:textColor">#4c566c</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:layout_alignParentTop">true</item>
+    </style>
+
+    <!-- Web Feed styles -->
+    <style name="HzFeed" parent="@style/HzVerticalBlock">
+        <item name="android:background">#fff</item>
+        <item name="android:dividerHeight">0px</item>
+        <item name="android:divider">@android:color/transparent</item>
+        <item name="android:layout_height">fill_parent</item>
+    </style>
+
+    <!-- <style name="HzActivityStreamItem" parent="@style/HzBlock"> -->
+    <!-- <item name="android:paddingLeft">8dp</item> -->
+    <!-- <item name="android:paddingTop">8dp</item> -->
+    <!-- <item name="android:paddingRight">30dp</item> -->
+    <!-- <item name="android:paddingBottom">8dp</item> -->
+    <!-- <item name="android:background">@drawable/activity_stream_item</item> -->
+    <!-- </style> -->
+
+
+    <!-- <style name="HzActivityStreamItemFrame" parent="@style/HzVerticalBlock"> -->
+    <!-- <item name="android:background">@drawable/activity_stream_item</item> -->
+    <!-- </style> -->
+
+
+    <!-- <style name="HzCommentStreamItem" parent="@style/HzBlock"> -->
+    <!-- <item name="android:padding">8dp</item> -->
+    <!-- <item name="android:background">@drawable/comment_stream_item</item> -->
+    <!-- </style> -->
+
+    <style name="HzFeedDetails" parent="@style/HzBlock">
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="HzFeedTextView" parent="@style/HzInline">
+        <item name="android:textColor">#333333</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColorLink">#3c7fb9</item>
+    </style>
+
+    <style name="HzFeedHeadline" parent="@style/HzFeedTextView">
+        <item name="android:layout_marginBottom">7dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="HzBigFeedHeadline" parent="@style/HzFeedTextView">
+        <item name="android:layout_marginTop">2dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColorLink">#4c4c4c</item>
+    </style>
+
+    <style name="HzFeedActionTitle" parent="@style/HzFeedTextView">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:paddingBottom">2dp</item>
+        <item name="android:textColor">#3c7fb9</item>
+    </style>
+
+    <style name="HzFeedUser" parent="@style/HzFeedTextView">
+        <item name="android:layout_marginRight">5dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#3c7fb9</item>
+    </style>
+
+    <style name="HzFeedMessage" parent="@style/HzInline">
+        <item name="android:textColor">#333333</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="HzFeedCheckinCount" parent="@style/HzInline">
+        <item name="android:textColor">#333333</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="HzFeedWhen" parent="@style/HzInline">
+        <item name="android:textColor">#79869c</item>
+        <item name="android:textSize">11sp</item>
+    </style>
+
+    <!-- <style name="HzFeedCommentIcon" parent="@style/HzInline"> -->
+    <!-- <item name="android:layout_marginLeft">18dp</item> -->
+    <!-- <item name="android:layout_marginRight">4dp</item> -->
+    <!-- <item name="android:src">@drawable/comment_icon</item> -->
+    <!-- </style> -->
+
+
+    <!-- <style name="HzFeedLikeIcon" parent="@style/HzInline"> -->
+    <!-- <item name="android:layout_marginLeft">9dp</item> -->
+    <!-- <item name="android:layout_marginRight">4dp</item> -->
+    <!-- <item name="android:src">@drawable/img_like</item> -->
+    <!-- <item name="android:scaleType">fitXY</item> -->
+    <!-- <item name="android:layout_width">15dp</item> -->
+    <!-- <item name="android:layout_height">15dp</item> -->
+    <!-- </style> -->
+
+    <style name="HzFeedCommentCount" parent="@style/HzInline">
+        <item name="android:textSize">11sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#3c7fb9</item>
+    </style>
+
+    <!-- User feed styles -->
+    <style name="HzUserFeedRow" parent="@style/HzBlock">
+        <item name="android:background">@drawable/hz_bg_tile_stream</item>
+        <item name="android:layout_height">50dp</item>
+    </style>
+    
+    <style name="HzAchievementFeedRow" parent="@style/HzBlock">
+        <item name="android:background">@drawable/hz_bg_tile_stream</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="HzFeedLabel" parent="@style/HzInline">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#3e3e3e</item>
+        <item name="android:textColorLink">#79869c</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowColor">#ffffff</item>
+        <item name="android:shadowRadius">0.01</item>
+    </style>
+
+    <style name="HzUserFeedLabel" parent="@style/HzFeedLabel">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="HzAchievementFeedLabel" parent="@style/HzFeedLabel">
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="HzFeedSublabel" parent="@style/HzInline">
+        <item name="android:textSize">12sp</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowColor">#ffffff</item>
+        <item name="android:shadowRadius">0.01</item>
+    </style>
+
+    <style name="HzUserFeedSublabel" parent="@style/HzFeedSublabel">
+        <item name="android:textColor">#718491</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="HzAchievementFeedSublabel" parent="@style/HzFeedSublabel">
+        <item name="android:textColor">#999</item>
+    </style>
+
+    <!-- <style name="HzUserToggle"> -->
+    <!-- <item name="android:layout_width">wrap_content</item> -->
+    <!-- <item name="android:layout_height">wrap_content</item> -->
+    <!-- <item name="android:layout_centerVertical">true</item> -->
+    <!-- <item name="android:textOff"></item> -->
+    <!-- <item name="android:textOn"></item> -->
+    <!-- <item name="android:background">@drawable/user_toggle_button</item> -->
+    <!-- </style> -->
+
+    <style name="HzFollowLoading" parent="@android:style/Widget.ProgressBar.Small.Inverse">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <!-- <style name="HzFollowComplete" parent="@style/HzInline"> -->
+    <!-- <item name="android:src">@drawable/user_details_checkin</item> -->
+    <!-- </style> -->
+
+
+    <!-- <style name="HzDividerRow" parent="@style/HzBlock"> -->
+    <!-- <item name="android:background">@drawable/bkg_feedlette_divider</item> -->
+    <!-- <item name="android:paddingLeft">8dp</item> -->
+    <!-- <item name="android:gravity">center_vertical</item> -->
+    <!-- </style> -->
+
+    <style name="HzDividerText" parent="@style/HzBlock">
+        <item name="android:textColor">#596975</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowColor">#ffffff</item>
+        <item name="android:shadowRadius">0.01</item>
+    </style>
+
+    <!-- <style name="HzErrorDividerRow" parent="@style/HzBlock"> -->
+    <!-- <item name="android:background">@drawable/bkg_feedlette_divider_error</item> -->
+    <!-- <item name="android:paddingLeft">8dp</item> -->
+    <!-- <item name="android:gravity">center_vertical</item> -->
+    <!-- </style> -->
+
+    <style name="HzErrorDividerText" parent="@style/HzBlock">
+        <item name="android:textColor">#6d4242</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowColor">#ffffff</item>
+        <item name="android:shadowRadius">0.01</item>
+    </style>
+
+    <!-- Checkin/Tips form styles -->
+    <style name="HzFormMessage" parent="@style/HzBlock">
+        <item name="android:textSize">18sp</item>
+        <item name="android:layout_marginBottom">8dp</item>
+    </style>
+
+    <!-- Checkin form settings -->
+    <style name="HzCheckinSettingsSection" parent="@style/HzBlock">
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+    </style>
+
+    <style name="HzCheckinSettingsIcon" parent="@style/HzInline">
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_marginRight">7dp</item>
+    </style>
+
+    <style name="HzCheckinSettingsLabel" parent="@style/HzInline">
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:textColor">#fff</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:shadowDy">-1</item>
+        <item name="android:shadowColor">#485056</item>
+        <item name="android:shadowRadius">0.01</item>
+    </style>
+
+    <!-- <style name="HzCheckinSettingsCheckbox" parent="@style/HzInline"> -->
+    <!-- <item name="android:button">@android:color/transparent</item> -->
+    <!-- <item name="android:background">@drawable/checkbox</item> -->
+    <!-- <item name="android:layout_centerVertical">true</item> -->
+    <!-- <item name="android:layout_alignParentRight">true</item> -->
+    <!-- </style> -->
+
+    <style name="HzCheckinSettingsLine" parent="@style/HzBlock">
+        <item name="android:layout_height">1px</item>
+        <item name="android:background">#727e88</item>
+    </style>
+
+    <!-- Tutorial styles -->
+
+    <style name="HzTutorialTable" parent="@style/HzBlock">
+        <item name="android:layout_marginTop">0dp</item>
+        <item name="android:layout_marginLeft">2dp</item>
+        <item name="android:layout_marginRight">2dp</item>
+        <item name="android:layout_marginBottom">2dp</item>
+    </style>
+
+    <!-- <style name="HzTutorialTableRowTop" parent="@style/HzBlock"> -->
+    <!-- <item name="android:background">@drawable/tbl_row_top</item> -->
+    <!-- <item name="android:paddingTop">5dp</item> -->
+    <!-- </style> -->
+
+
+    <!-- <style name="HzTutorialTableRow" parent="@style/HzBlock"> -->
+    <!-- <item name="android:background">@drawable/tbl_row_middle</item> -->
+    <!-- <item name="android:paddingTop">2dp</item> -->
+    <!-- </style> -->
+
+
+    <!-- <style name="HzTutorialTableRowBottom" parent="@style/HzBlock"> -->
+    <!-- <item name="android:background">@drawable/tbl_row_bottom</item> -->
+    <!-- <item name="android:paddingTop">2dp</item> -->
+    <!-- </style> -->
+
+    <style name="HzTutorialItemStack" parent="@style/HzVerticalBlock">
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginLeft">8dp</item>
+    </style>
+
+    <style name="HzTutorialItemHeader" parent="@style/HzInline">
+        <item name="android:textSize">19sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="HzTutorialItemSub" parent="@style/HzInline">
+        <item name="android:textSize">12sp</item>
+        <item name="android:layout_marginTop">-3dp</item>
+        <item name="android:textColor">#888</item>
+    </style>
+
+    <style name="HzTutorialIcon" parent="@style/HzBlock">
+        <item name="android:layout_marginTop">13dp</item>
+        <item name="android:layout_marginLeft">18dp</item>
+        <item name="android:layout_marginRight">12dp</item>
+        <item name="android:layout_width">28dp</item>
+        <item name="android:layout_height">26dp</item>
+    </style>
+
+    <!-- <style name="HzTutorialCheckmark" parent="@style/HzBlock"> -->
+    <!-- <item name="android:paddingTop">12dp</item> -->
+    <!-- <item name="android:paddingRight">8dp</item> -->
+    <!-- .                <item name="android:layout_marginRight">3dp</item> -->
+    <!-- <item name="android:layout_width">38dp</item> -->
+    <!-- <item name="android:layout_height">38dp</item> -->
+    <!-- <item name="android:layout_gravity">right</item> -->
+    <!-- <item name="android:src">@drawable/checkbox_unchecked</item> -->
+    <!-- </style> -->
+
+    <style name="HzTutorialProgress" parent="@android:style/Widget.ProgressBar.Large.Inverse">
+        <item name="android:padding">6dp</item>
+        <item name="android:layout_marginTop">6dp</item>
+        <item name="android:layout_marginLeft">0dp</item>
+        <item name="android:layout_marginRight">6dp</item>
+        <item name="android:layout_width">38dp</item>
+        <item name="android:layout_height">38dp</item>
+        <item name="android:layout_gravity">right</item>
+    </style>
+
+    <!-- Checkin share dialog -->
+    <!-- <style name="HzCheckinShareBar" parent="@style/HzBlock"> -->
+    <!-- <item name="android:layout_height">48dp</item> -->
+    <!-- <item name="android:background">@drawable/ac_bkg_collapsed</item> -->
+    <!-- </style> -->
+
+    <style name="HzCheckinShareZappy" parent="@style/HzInline">
+        <item name="android:layout_width">48dp</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:padding">6dp</item>
+    </style>
+
+    <style name="HzCheckinShareHeader" parent="@style/HzInline">
+        <item name="android:textColor">#fff</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_margin">10dp</item>
+    </style>
+
+    <!-- <style name="HzCheckinShareCheckinMessage" parent="@style/HzBlock"> -->
+    <!-- <item name="android:background">@drawable/ac_edit_text</item> -->
+    <!-- <item name="android:textColor">#737a80</item> -->
+    <!-- <item name="android:textSize">14sp</item> -->
+    <!-- <item name="android:layout_marginTop">8dp</item> -->
+    <!-- <item name="android:layout_height">32dp</item> -->
+    <!-- <item name="android:layout_marginBottom">7dp</item> -->
+    <!-- <item name="android:layout_marginRight">6dp</item> -->
+    <!-- </style> -->
+
+    <style name="HzCheckinShareShareIcon" parent="@style/HzInline">
+        <item name="android:layout_height">32dp</item>
+        <item name="android:layout_width">32dp</item>
+        <item name="android:layout_marginRight">6dp</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:layout_marginBottom">8dp</item>
+    </style>
+
+    <!-- <style name="HzCheckinShareRow" parent="@style/HzBlock"> -->
+    <!-- <item name="android:background">@drawable/ac_share_row_bkg</item> -->
+    <!-- <item name="android:layout_height">36dp</item> -->
+    <!-- <item name="android:layout_marginLeft">3dp</item> -->
+    <!-- <item name="android:layout_marginRight">3dp</item> -->
+    <!-- </style> -->
+
+    <style name="HzShareRowIcon" parent="@style/HzInline">
+        <item name="android:paddingTop">6dp</item>
+        <item name="android:paddingBottom">6dp</item>
+    </style>
+
+    <style name="HzShareRowText" parent="@style/HzInline">
+        <item name="android:layout_margin">6dp</item>
+        <item name="android:textColor">#fff</item>
+    </style>
+
+    <!-- <style name="HzShareRowCheckbox" parent="@style/HzInline"> -->
+    <!-- <item name="android:button">@android:color/transparent</item> -->
+    <!-- <item name="android:background">@drawable/ac_checkbox</item> -->
+    <!-- <item name="android:layout_width">24dp</item> -->
+    <!-- <item name="android:layout_height">24dp</item> -->
+    <!-- <item name="android:layout_margin">6dp</item> -->
+    <!-- </style> -->
+
+
+    <!-- <style name="HzCheckinActionRow" parent="@style/HzBlock"> -->
+    <!-- <item name="android:background">@drawable/ac_bottom_row</item> -->
+    <!-- <item name="android:layout_height">48dp</item> -->
+    <!-- <item name="android:layout_marginLeft">3dp</item> -->
+    <!-- <item name="android:layout_marginRight">3dp</item> -->
+    <!-- </style> -->
+
+
+    <!-- <style name="HzCheckinShareExploreButton" parent="@style/HzInline"> -->
+    <!-- <item name="android:background">@drawable/btn_cs_explore_drawable</item> -->
+    <!-- <item name="android:layout_height">36dp</item> -->
+    <!-- <item name="android:layout_width">72dp</item> -->
+    <!-- <item name="android:layout_marginLeft">6dp</item> -->
+    <!-- </style> -->
+
+
+    <!-- <style name="HzCheckinShareDoneButton" parent="@style/HzInline"> -->
+    <!-- <item name="android:background">@drawable/btn_cs_done_drawable</item> -->
+    <!-- <item name="android:layout_height">36dp</item> -->
+    <!-- <item name="android:layout_width">72dp</item> -->
+    <!-- <item name="android:layout_marginRight">6dp</item> -->
+    <!-- </style> -->
+
+
+    <!-- Login Text Entry Cell -->
+    <!-- <style name="HzTextEditRow" parent="@style/HzVerticalFull"> -->
+    <!-- <item name="android:layout_height">wrap_content</item> -->
+    <!-- <item name="android:layout_width">fill_parent</item> -->
+    <!-- <item name="android:background">@drawable/bg_form_cell</item> -->
+    <!-- <item name="android:tileMode">repeat</item> -->
+    <!-- </style> -->
+
+
+    <!-- <style name="HzLoginButton" parent="@style/HzBlock"> -->
+    <!-- <item name="android:layout_height">45dp</item> -->
+    <!-- <item name="android:background">@drawable/btn_login_drawable</item> -->
+    <!-- <item name="android:text">Log in"</item> -->
+    <!-- <item name="android:textSize">18dp</item> -->
+    <!-- <item name="android:textColor">#ffffff</item> -->
+    <!-- <item name="android:textStyle">bold</item> -->
+    <!-- <item name="android:shadowColor">#000000</item> -->
+    <!-- <item name="android:shadowDy">-1</item> -->
+    <!-- <item name="android:shadowRadius">0.01</item> -->
+    <!-- <item name="android:gravity">left|center_vertical</item> -->
+    <!-- </style> -->
+
+
+    <!-- <style name="HzForgotPasswordButton" parent="@style/HzBlock"> -->
+    <!-- <item name="android:layout_height">45dp</item> -->
+    <!-- <item name="android:background">@drawable/btn_forgot_password_drawable</item> -->
+    <!-- <item name="android:text">Forgot your password?"</item> -->
+    <!-- <item name="android:textSize">18dp</item> -->
+    <!-- <item name="android:textColor">#ffffff</item> -->
+    <!-- <item name="android:textStyle">bold</item> -->
+    <!-- <item name="android:shadowColor">#000000</item> -->
+    <!-- <item name="android:shadowDy">-1</item> -->
+    <!-- <item name="android:shadowRadius">0.01</item> -->
+    <!-- <item name="android:gravity">left|center_vertical</item> -->
+    <!-- </style> -->
+
+
+    <!-- <style name="HzSignUpButton" parent="@style/HzBlock"> -->
+    <!-- <item name="android:layout_height">45dp</item> -->
+    <!-- <item name="android:background">@drawable/btn_sign_up_drawable</item> -->
+    <!-- </style> -->
+
+
+    <!-- <style name="HzTextEditRowErrorText" parent="@style/HzBlock"> -->
+    <!-- <item name="android:textColor">#e74911</item> -->
+    <!-- <item name="android:textSize">14sp</item> -->
+    <!-- <item name="android:textStyle">bold</item> -->
+    <!-- <item name="android:layout_marginLeft">14dp</item> -->
+    <!-- <item name="android:layout_marginTop">5dp</item> -->
+    <!-- <item name="android:shadowDy">2</item> -->
+    <!-- <item name="android:shadowColor">#FFFFFF</item> -->
+    <!-- <item name="android:shadowRadius">0.01</item> -->
+    <!-- <item name="android:drawableLeft">@drawable/icon_error_arrow_down</item> -->
+    <!-- <item name="android:drawablePadding">2dp</item> -->
+    <!-- </style> -->
+
+    <style name="HzTextEditRowField">
+        <item name="android:layout_height">48dp</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_gravity">right</item>
+    </style>
+
+    <style name="HzNotificationTitle">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#ff000000</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="HzNotificationText">
+        <item name="android:textColor">#ff000000</item>
+    </style>
+
+    <!-- <style name="HzFormSeparator" parent="@style/HzBlock"> -->
+    <!-- <item name="android:layout_height">2dp</item> -->
+    <!-- <item name="android:background">@drawable/bkg_pixel_divider</item> -->
+    <!-- </style> -->
+
+    <style name="HzPlayFriendsActionButton" parent="@style/HzInline">
+        <item name="android:background">@drawable/hz_play_friends_action_button_drawable</item>
+        <item name="android:paddingBottom">1dp</item>
+        <item name="android:textSize">12dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- <style name="HzPlayFriendsOverlayButton" parent="@style/HzInline"> -->
+    <!-- <item name="android:background">@drawable/play_friends_overlay_button_drawable</item> -->
+    <!-- <item name="android:paddingBottom">1dp</item> -->
+    <!-- <item name="android:textSize">12dp</item> -->
+    <!-- <item name="android:textStyle">bold</item> -->
+    <!-- </style> -->
+
+    <style name="HzWhiteBottomShadow" parent="@style/HzInline">
+        <item name="android:shadowColor">#ffffff</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">0.001</item>
+    </style>
+
+    <style name="HzDarkTopShadow" parent="@style/HzInline">
+        <item name="android:shadowColor">#cc000000</item>
+        <item name="android:shadowDy">-1</item>
+        <item name="android:shadowRadius">0.001</item>
+    </style>
+
+    <style name="HzButtonRoundGreen" parent="@style/HzInline">
+        <item name="android:background">@drawable/hz_button_round_green_drawable</item>
+        <item name="android:paddingBottom">3dp</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:paddingRight">15dp</item>
+        <item name="android:textSize">12dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+</resources>

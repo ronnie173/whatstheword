@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	 
+    <!-- General dimensions -->
+	<dimen name="general_top_bar_title">18sp</dimen>	
+	<dimen name="general_top_bar_coins_value">22sp</dimen>	
+	
+	<!-- Start Activity -->
+	<dimen name="start_button_title">26sp</dimen>
+	 
+	<!-- Category Activity -->
+	<dimen name="category_item_title">26sp</dimen>
+	<dimen name="category_item_subtitle">12sp</dimen>	
+	
+	<!-- Levels Activity -->
+	<dimen name="level_item_title">24sp</dimen>
+	<dimen name="level_item_subtitle">12sp</dimen>
+	<dimen name="level_item_score_title">16sp</dimen>	
+	<dimen name="level_item_score_value">26sp</dimen>
+	<dimen name="level_item_words_title">16sp</dimen>
+	<dimen name="level_item_words_value">26sp</dimen>
+	<dimen name="level_item_percentage_value">26sp</dimen>
+	
+	<!-- Play Activity -->
+	<dimen name="play_item_letter">36sp</dimen>
+	<dimen name="play_item_target_letter">36sp</dimen>	
+	<dimen name="play_success_message">30sp</dimen>
+	<dimen name="play_success_submessage">26sp</dimen>
+	<dimen name="play_success_quote_message">20sp</dimen>
+	<dimen name="play_success_quote_person">18sp</dimen>
+	<dimen name="play_success_summary_button_text">24sp</dimen>
+	<dimen name="play_success_summary_score">16sp</dimen>
+	<dimen name="play_success_summary_scoreVal">36sp</dimen>
+	<dimen name="play_success_summary_coins">16sp</dimen>
+	<dimen name="play_success_summary_coinsVal">36sp</dimen>
+	
+	<!-- POPUP WINDOW -->
+	<dimen name="popup_layout_title">26sp</dimen>
+	<dimen name="popup_layout_close">20sp</dimen>
+	<dimen name="popup_button_title">18sp</dimen>
+	<dimen name="popup_button_coins">18sp</dimen>
+    
+</resources>

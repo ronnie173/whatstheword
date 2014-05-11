@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:background="@drawable/bg_activity"
+  >
+  <RelativeLayout
+        android:id="@+id/layout_top_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="42dp"
+        android:background="@drawable/bg_actionbar">
+
+           <!-- <ImageView
+            android:id="@+id/ivShare"
+            android:layout_width="40dp"
+            android:layout_height="42dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/icon_share_sign" />
+ -->
+        <ImageView
+            android:id="@+id/ivSettings"
+            android:layout_width="40dp"
+            android:layout_height="42dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/icon_option_sign" />
+    </RelativeLayout>
+    <View android:id="@+id/vStitch" android:background="@drawable/bg_stitch" android:layout_width="fill_parent" android:layout_height="35.0dip" android:layout_below="@id/layout_top_bar" />
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_above="@+id/flWrapper" android:layout_below="@id/vStitch" android:layout_alignParentLeft="true" android:layout_alignParentRight="true">
+        <TextView android:layout_gravity="center" android:id="@+id/tvLevel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="123" style="@style/Text.Level.Big" />
+    </FrameLayout>
+    <FrameLayout android:id="@+id/flWrapper" android:background="@drawable/bg_book" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">        
+        <Button
+            android:id="@+id/button_play"
+            android:background="@drawable/btn_play"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_gravity="center|center" 
+        />
+    </FrameLayout>
+    <Spinner android:id="@+id/spLanguage" android:background="#77000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/gapBig" android:layout_marginBottom="@dimen/gapBig" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" />
+    <CheckBox android:textStyle="bold" android:textColor="#ff616a73" android:gravity="center_horizontal" android:id="@+id/checkbox_ads" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/gapMedium" android:layout_marginRight="@dimen/gapBig" android:layout_marginBottom="@dimen/gapMedium" android:button="@null" android:text="@string/buttonHomePremium" android:drawableLeft="@drawable/sel_cb_sound" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+
+	    <RelativeLayout
+        android:id="@+id/layout_getcoins"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/popup_background"
+        android:gravity="center"
+        android:padding="3dip" >
+
+       <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@color/popup_layout"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tvPopupCoinsTitle"
+                style="@style/popup_layout_title"
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:gravity="center"
+                android:text="@string/getcoins_layout_title" />
+
+            <RelativeLayout
+                android:id="@+id/layout_750_coins"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button_selector" >
+
+                <TextView
+                    android:id="@+id/tv750Coins"
+                    style="@style/popup_button_title"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/getcoins_750_coins_title" />
+
+                <TextView
+                    android:id="@+id/tv750CoinsVal"
+                    style="@style/popup_button_coins"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="2dip"
+                    android:text="@string/getcoins_750_coins_val" />
+            </RelativeLayout>
+
+                    <RelativeLayout
+                android:id="@+id/layout_download_coins"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/button_selector"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/tvDownloadCoinsTitle"
+                    style="@style/popup_button_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/getcoins_download_coins_title" />
+
+                <TextView
+                    android:id="@+id/tvDownloadCoinsSubtitle"
+                    style="@style/popup_button_coins"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvDownloadCoinsTitle"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/getcoins_download_coins_subtitle" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tvPopupCoinsClose"
+                style="@style/popup_layout_close"
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:gravity="center"
+                android:text="@string/popup_layout_close" />
+        </LinearLayout>
+    </RelativeLayout>
+ 
+	<!-- 
+    <RelativeLayout
+        android:id="@+id/layout_share"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/popup_background"
+        android:gravity="center"
+        android:padding="3dip" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@color/popup_layout"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tvPopupShareTitle"
+                style="@style/popup_layout_title"
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:gravity="center"
+                android:text="@string/share_layout_title" />
+            
+            <RelativeLayout
+                android:id="@+id/layout_share_facebook"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:clickable="true"
+                android:background="@drawable/button_selector" >
+
+                <ImageView
+                    android:id="@+id/ivAskFacebook"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="2dip"
+                    android:background="@drawable/button_icon_facebook" />
+
+                <TextView
+                    android:id="@+id/tvShareFacebook"
+                    style="@style/popup_button_title"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/ivAskFacebook"
+                    android:paddingLeft="10dp"                    
+                    android:text="@string/share_200_coins_title" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_share_twitter"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:clickable="true"
+                android:background="@drawable/button_selector" >
+
+                <ImageView
+                    android:id="@+id/ivAskTwitter"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="2dip"
+                    android:background="@drawable/button_icon_twitter" />
+
+                <TextView
+                    android:id="@+id/tvShareTwitter"
+                    style="@style/popup_button_title"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/ivAskTwitter"
+                    android:paddingLeft="10dp"
+                    android:text="@string/share_100_coins_title" />
+            </RelativeLayout>
+
+         <TextView
+                android:id="@+id/tvPopupShareClose"
+                style="@style/popup_layout_close"
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:gravity="center"
+                android:text="@string/popup_layout_close" />
+        </LinearLayout>
+    </RelativeLayout>-->
+
+    <RelativeLayout
+        android:id="@+id/layout_settings"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/popup_background"
+        android:gravity="center"
+        android:padding="3dip" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@color/popup_layout"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tvPopupSettingsTitle"
+                style="@style/popup_layout_title"
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:gravity="center"
+                android:text="@string/settings_layout_title" />
+
+            <RelativeLayout
+                android:id="@+id/layout_sound_off"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:clickable="true"
+                android:background="@drawable/button_selector" >
+
+                <TextView
+                    android:id="@+id/tvSoundOff"
+                    style="@style/popup_button_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/settings_sound_off_title" />
+            </RelativeLayout>
+            
+            <RelativeLayout
+                android:id="@+id/layout_quote_off"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:clickable="true"
+                android:background="@drawable/button_selector" >
+
+                <TextView
+                    android:id="@+id/tvQuoteOff"
+                    style="@style/popup_button_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/settings_quote_off_title" />
+            </RelativeLayout>  
+                      
+            <RelativeLayout
+                android:id="@+id/layout_reset_data"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:clickable="true"
+                android:background="@drawable/button_selector" >
+
+                <TextView
+                    android:id="@+id/tvResetData"
+                    style="@style/popup_button_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/share_reset_data_title" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/layout_rate_me"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/button_selector" >
+
+                <TextView
+                    android:id="@+id/tvRateApp"
+                    style="@style/popup_button_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/share_rate_me_title" />
+            </RelativeLayout>
+
+   
+            <TextView
+                android:id="@+id/tvPopupSettingsClose"
+                style="@style/popup_layout_close"
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:gravity="center"
+                android:text="@string/popup_layout_close" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout 
+        android:id="@+id/layout_quote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/nine_patch_quote"
+        android:visibility="gone">
+	        
+	  	<TextView
+	         android:id="@+id/tvSuccessQuoteMessage"
+	         style="@style/play_success_quote_message"
+	         android:layout_width="fill_parent"
+	         android:layout_height="wrap_content"
+	         android:gravity="center_vertical"
+	         android:text="" />
+	        
+	    <TextView
+	         android:id="@+id/tvSuccessQuotePerson"
+	         android:layout_below="@id/tvSuccessQuoteMessage"
+	         style="@style/play_success_quote_person"
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         android:layout_alignParentRight="true"
+	         android:paddingRight="10dp"
+	         android:text="" />
+	    
+    </RelativeLayout >    
+</RelativeLayout>

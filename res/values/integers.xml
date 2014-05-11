@@ -1,0 +1,9 @@
+<resources>
+     <integer name="base_score" >100</integer>
+     <integer name="base_penalty" >10</integer>
+     <integer name="help_icon_shake" >15</integer>
+     <integer name="help_icon_shake_repeat" >7</integer>
+     <integer name="help_reveal_letter" >10</integer>
+     <integer name="help_remove_letters" >10</integer>
+     <integer name="interstitial_level" >3</integer>     
+</resources>

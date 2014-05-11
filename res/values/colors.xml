@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!-- Start Screen colors -->
+<color name="start_background">#FE0000</color> 
+<color name="start_button_title">#FFFFFF</color>
+<color name="start_button_title_shadow">#B20D1B</color>
+
+<!-- General colors -->
+<color name="general_top_bar_back">#C70E1E</color>
+<color name="general_top_bar_title">#FFFFFF</color>
+<color name="general_top_bar_coins_value">#FFD119</color>
+<color name="popup_background">#80000000</color>
+
+<!-- Categories Activity -->
+<color name="category_item_title">#FFFFFF</color>
+<color name="category_item_title_shadow">#B20D1B</color>
+<color name="category_item_subtitle">#FFFFFF</color>
+
+<!-- Levels Activity -->
+<color name="level_item_title">#FFFFFF</color>
+<color name="level_item_title_shadow">#B20D1B</color>
+<color name="level_item_item_subtitle">#FFFFFF</color>
+<color name="level_item_score_title">#FFFFFF</color>
+<color name="level_item_score_value">#FFD119</color>
+<color name="level_item_words_title">#FFFFFF</color>
+<color name="level_item_words_value">#FFCC01</color>
+<color name="level_item_percentage_value">#FFFFFF</color>
+
+<!-- Levels Activity - disabled -->
+<color name="level_item_title_disabled">#3C3C3C</color>
+<color name="level_item_title_shadow_disabled">#FFD119</color>
+<color name="level_item_item_subtitle_disabled">#333333</color>
+<color name="level_item_score_title_disabled">#333333</color>
+<color name="level_item_score_value_disabled">#4B4B4B</color>
+<color name="level_item_words_title_disabled">#333333</color>
+<color name="level_item_words_value_disabled">#4B4B4B</color>
+<color name="level_item_percentage_value_disabled">#3C3C3C</color>
+
+<!-- Play Activity -->
+<color name="play_success_message">#FFFFFF</color>
+<color name="play_success_shade">#80000000</color>
+<color name="play_success_summary_button_normal">#8c6239</color>
+<color name="play_success_summary_button_pressed">#8c6239</color>
+<color name="play_success_summary_button_text">#FFFFFF</color>
+<color name="play_share_menu">#DD1021</color> 
+<color name="play_item_letter">#9ec774</color>
+<color name="play_item_target_letter">#9ec774</color>
+<color name="layout_target_word">#afd687</color>
+<color name="layout_bottom_letters">#9ec774</color>
+<color name="play_success_summary_score">#FFFFFF</color>
+<color name="play_success_summary_scoreVal">#FFD119</color>
+<color name="play_success_summary_coins">#FFFFFF</color>
+<color name="play_success_summary_coinsVal">#FFD119</color>
+
+<!-- POPUP WINDOW -->
+<color name="popup_layout_quote">#000000</color>
+<color name="popup_layout">#8c6239</color>
+<color name="popup_layout_divider">#DD1021</color>
+<color name="popup_layout_title">#FFFFFF</color>
+<color name="popup_layout_close">#FFFFFF</color>
+<color name="popup_layout_close_normal">#FE0000</color>
+<color name="popup_layout_close_pressed">#DD1021</color>
+<color name="popup_button_title">#FFFFFF</color>
+<color name="popup_button_coins">#FFD119</color>
+</resources>

@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="sdk-build">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/sdk-build/heyzap-ads-sdk.jar!/" />
+      <root url="jar://$PROJECT_DIR$/sdk-build/heyzap-sdk.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

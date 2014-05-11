@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/list_item_level_disabled"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="?android:attr/listPreferredItemHeight"
+    android:orientation="vertical"
+    android:background="@drawable/button_window_inactive"
+    android:padding="10dip" >
+
+    <RelativeLayout
+        android:id="@+id/layout_top"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/tvLevel_title"
+            style="@style/level_item_title_disabled"
+            android:layout_alignParentLeft="true"
+            android:text="@string/level_item_title" />
+
+        <TextView
+            android:id="@+id/tvScoreVal"
+            style="@style/level_item_score_value_disabled"
+            android:layout_alignParentRight="true"
+            android:gravity="right|center_vertical"
+            android:text="1800" />
+
+        <TextView
+            android:id="@+id/tvScore"
+            style="@style/level_item_score_title_disabled"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dip"
+            android:layout_toLeftOf="@id/tvScoreVal"
+            android:text="@string/level_item_score_title" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_middle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_top" >
+
+        <TextView
+            android:id="@+id/tvWords"
+            style="@style/level_item_words_title_disabled"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dip"
+            android:text="@string/level_item_words_title" />
+
+        <TextView
+            android:id="@+id/tvWordsVal"
+            style="@style/level_item_words_value_disabled"
+            android:layout_toRightOf="@id/tvWords"
+            android:gravity="right|center_vertical"
+            android:text="14/16" />
+
+        <TextView
+            android:id="@+id/tvPercentageVal"
+            style="@style/level_item_percentage_value_disabled"
+            android:layout_alignParentRight="true"
+            android:text="87%" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dip" 
+        android:layout_marginBottom="5dip"
+        android:layout_below="@id/layout_middle" >
+
+        <com.games.guesswordphoto.utility.SaundProgressBar
+            android:id="@+id/progressPercentage"
+            style="@style/Widget.ProgressBar.MiniProgressBar"
+            android:layout_width="fill_parent"
+            android:layout_height="12dp"
+            />
+    </RelativeLayout>
+
+</LinearLayout>

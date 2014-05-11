@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Whats The Word</string>
+    <string name="app_store_location">https://play.google.com/store/apps/details?id=com.hightechsoftware.whatstheword.car</string>
+    <!-- Start Activity -->
+    <string name="start_button_play">PLAY</string>
+    <string name="buttonHomePremium">Ads</string>
+    <string name="start_button_getcoins">GET COINS</string>
+    <string name="dialog_reset_title">Reseting Data</string>
+    <string name="dialog_reset_message">Please wait...</string>
+    <string name="dialog_reset_success">Reset Data Successful!</string>
+    <string name="dialog_reset_nosuccess">Reset Data Not Successful!</string>
+    
+    <!-- Categories Activity -->
+    <string name="category_top_title">CATEGORIES</string>
+    
+    <!-- Levels Screen -->
+    <string name="level_item_title">LEVEL</string>
+    <string name="level_item_score_title">SCORE</string>
+    <string name="level_item_words_title">WORDS</string>
+    
+    <!-- Play Screen -->
+    <string name="play_summary_button_next">NEXT</string>
+    <string name="play_summary_button_back">BACK</string>
+    <string name="play_summary_item_score_title">SCORE</string>
+    <string name="play_summary_score">SCORE</string>
+    <string name="play_summary_coins">COINS</string>
+    
+    <!-- PUPUP WINDOW -->    
+    <string name="popup_layout_close">CLOSE</string>    
+    <string name="helpers_layout_title">HELPERS</string>
+    <string name="helpers_reveal_letter_title">REVEAL A LETTER</string>
+    <string name="helpers_remove_letter_title">REMOVE A LETTER</string>
+    <string name="helpers_share_title">SHARE VIA</string>
+    <string name="helpers_facebook_title">ASK ON FACEBOOK</string>
+    <string name="helpers_twitter_title">ASK ON TWITTER</string>
+    
+    <string name="getcoins_layout_title">GET COINS</string>
+    <string name="getcoins_750_coins_title">750 COINS + REMOVE ADS</string>
+    <string name="getcoins_750_coins_val">0.99</string>
+    <string name="getcoins_2000_coins_title">2000 COINS</string>
+    <string name="getcoins_2000_coins_val">1.99</string>
+    <string name="getcoins_5000_coins_title">5000 COINS</string>
+    <string name="getcoins_5000_coins_val">3.99</string>
+    <string name="getcoins_15000_coins_title">15000 COINS</string>
+    <string name="getcoins_15000_coins_val">7.99</string>
+    <string name="getcoins_download_coins_title">DOWNLOAD A FREE GAME</string>
+    <string name="getcoins_download_coins_subtitle">FREE 250 COINS</string>
+    
+    <string name="share_all_title">SHARE FOR HELP!</string>    
+    <string name="share_layout_title">SHARE</string>
+    <string name="share_200_coins_title">GET 200 COINS</string>
+    <string name="share_100_coins_title">GET 100 COINS</string>
+    
+    <string name="settings_layout_title">SETTING</string>
+    <string name="settings_sound_off_title">TURN SOUND OFF</string>
+    <string name="settings_sound_on_title">TURN SOUND ON</string>
+    <string name="share_reset_data_title">RESET DATA</string>
+    <string name="settings_quote_on_title">SHOW QUOTE ON</string>
+    <string name="settings_quote_off_title">SHOW QUOTE OFF</string>
+    <string name="share_rate_me_title">RATE ME!!!</string>    
+    
+    <!-- Dialog window -->
+    <string name="dialog_button_OK">OK</string>
+    <string name="dialog_message_no_coins">Insufficient coins! Please purchase more coins to use this option!!!</string>
+    
+    <string name="share_facebook_subject">Can you guess the word?</string>
+    <string name="share_facebook_text" formatted="false">I found this great game! You should try it out: </string>
+    <string name="share_facebook_text_sub" formatted="false">($1%s letters) Possible letters: $2%s Join the puzzle fun on Android!</string>
+    <string name="share_twitter_text">Please help :) </string>
+    <string name="share_twitter_text_sub">I found this great game! You should try it out:</string>
+    
+   <!-- SUCCESS MESSAGE -->
+     <string-array name="success_message">
+	    <item>Awesome!</item>
+	    <item>Great Job!</item>
+	    <item>Well Done!</item>
+	    <item>Super!</item>	    
+	</string-array>
+	<string-array name="success_submessage">
+	    <item>What a genius!</item>
+	    <item>You\'re great!</item>
+	    <item>On a roll!</item>
+	    <item>You da boss!</item>
+	    <item>You are awesome!</item>
+	    <item>Great job!</item>    
+	</string-array>
+	
+	<!-- QUOTE MESSAGE -->
+	 <string-array name="quote_message">
+	    <item>To finish first, you must first finish.</item>
+		<item>Nobody remembers the guy who finished second but the guy who finished second.</item>
+		<item>The winner ain’t the one with the fastest car, it’s the one who refuses to lose.</item>
+		<item>You win some, you lose some, you wreck some.</item>
+		<item>Aerodynamics are for people who can’t build engines.</item>
+		<item>The client is not always right.</item>
+		<item>If you think the last 4 words of the national anthem are gentlemen, start your engines, you might be a redneck.</item>
+		<item>Need to tie some kerosene rags around his ankles so the ants don’t eat his candy.</item>
+		<item>The lead car is absolutely unique, except for the one behind it which is identical.</item>
+		<item>Turbochargers are for people who cant build engines.</item>
+		<item>Here Kitty Kitty Kitty!</item>
+		<item>We broke something, I think it was traction…</item>
+		<item>Auto racing, bull fighting, and mountain climbing are the only real sports… all the others are games.</item>
+		<item>Calling upon my years of experience, I froze at the controls.</item>
+		<item>Faster, faster, faster, until the thrill of speed overcomes the fear of death…</item>
+		<item>I don’t know driving in another way which isn’t risky. Each one has to improve himself. Each driver has its limit. My limit is a little bit further than other’s.</item>
+		<item>It is amazing how may drivers, even at the Formula One Level, think that the brakes are for slowing the car down.</item>
+		<item>Once you’ve raced, you never forget it…and you never get over it.</item>
+		<item>Race cars are neither beautiful nor ugly. They become beautiful when they win.</item>
+		<item>There’s no secret. You just press the accelerator to the floor and steer left.</item>
+		<item>To achieve anything in this game you must be prepare to dabble in the boundary of disaster.</item>
+		<item>What’s behind you doesn’t matter.</item>
+		<item>When you win a race your on top that day, so take it for what its worth, have a good time and party, cause the next day when you get out of bed, the meter goes back to zero again.</item>
+		<item>No, no, he didn’t slam you, he didn’t bump you, he didn’t nudge you… he *rubbed* you. And rubbin, son, is racin’.</item>
+		<item>If you can leave two black stripes from the exit of one corner to the braking zone of the next, you have enough horsepower.</item>
+		<item>If you’re in control, you’re not going fast enough.</item>
+		<item>Mr. Bentley – He builds fast trucks.</item>
+		<item>Why worry about death, it’ll come sooner or later.</item>
+		<item>Speed has never killed anyone, suddenly becoming stationary… that’s what gets you.</item>
+		<item>Auto racing began 5 minutes after the second car was built.</item>
+		<item>As far as cheating goes, they’ll never stop it. The only way it can be done successfully, only one person can know about it.</item>
+		<item>It’s like flying jet fighters in a gymnasium.</item>
+		<item>You can’t fix stupid.</item>
+		<item>You can tell that you’re in trouble when you feel the air on the back of your neck instead of in your face.</item>
+		<item>I got hit in the head pretty hard. My clock ran backwards for two years.</item>
+		<item>He ran out of talent about halfway through the corner.</item>
+		<item>After the third flip, I lost control…</item>
+		<item>We worked 80 hour weeks for 30 years to keep from having to get a real job.</item>
+		<item>It’s basically the same, just darker.</item>
+		<item>Auto racing is boring except when a car is going at least 172 miles per hour upside down.</item>
+		<item>If someone said to me that you can have three wishes, my first would have been to get into racing, my second to be in Formula 1, my third to drive for Ferrari.</item>
+		<item>There are seven winners of the Monaco Grand Prix on the starting line today, and four of them are Michael Schumacher.</item>
+		<item>When I raced a car last it was at a time when sex was safe and racing was dangerous. Now, it’s the other way round.</item>
+		<item>I love this kind of racing, (but) these guys sure change their personalities in race mode. They’re like Doberman Pinschers with a hand grenade in their mouths.</item>
+		<item>The crashes people remember, but drivers remember the near misses.</item>
+		<item>When I started racing my father told me, ‘Cristiano, nobody has three balls but some people have two very good ones‘.</item>
+		<item>Moonshiners put more time, energy, thought, and love into their cars than any racer ever will. Lose on the track, and you go home. Lose with a load of whiskey, and you go to jail.</item>
+		<item>There have been other tracks that separated the men from the boys. This is the track that will separate the brave from the weak after the boys are gone.</item>
+		<item>Winning is everything. The only ones who remember you when you come second are your wife and your dog.</item>
+		<item>Straight roads are for fast cars, turns are for fast drivers.</item>
+		<item>It\'s not a throttle, it\'s a detonator.</item>
+		<item>Aerodynamics are for people who can\'t build engines.</item>
+		<item>Newman\'s first law: It is useless to put on your brakes when you\'re upside down.</item>
+		<item>Driving fast on the track does not scare me. What scares me is when I drive on the highway I get passed by some idiot who thinks he is Fangio.</item>    
+	</string-array>
+	<string-array name="quote_person">
+	    <item>Juan Manuel Fangio</item>
+		<item>Bobby Unser</item>
+		<item>Dale Earnhardt</item>
+		<item>Dale Ernhardt Sr.</item>
+		<item>Enzo Ferrari</item>
+		<item>Enzo Ferrari</item>
+		<item>Jeff Foxworthy.</item>
+		<item>Dale Earnhardt</item>
+		<item>Murray Walker.</item>
+		<item>Keith Duckworth</item>
+		<item>Tony Stewart</item>
+		<item>Carl Edwards</item>
+		<item>Ernest Hemingway</item>
+		<item>Stirling Moss</item>
+		<item>Hunter Thompson</item>
+		<item>Ayrton Senna</item>
+		<item>Mario Andretti</item>
+		<item>Richard Childress</item>
+		<item>Enzo Ferrari </item>
+		<item>Bill Vukovich</item>
+		<item>Sterling Moss</item>
+		<item>Enzo Ferrari</item>
+		<item>Bobby Allison</item>
+		<item>Harry Hogge</item>
+		<item>Mark Donohue</item>
+		<item>Parnelli Jones</item>
+		<item>Ettore Bugatti</item>
+		<item>Jim Dunn</item>
+		<item>Jeremy Clarkson</item>
+		<item>Henry Ford</item>
+		<item>Smokey Yunick</item>
+		<item>Dick Trickle</item>
+		<item>Larry Morgan</item>
+		<item>Buddy Baker</item>
+		<item>Buddy Baker</item>
+		<item>Buddy Baker</item>
+		<item>Don Roberts</item>
+		<item>Tom Lemon</item>
+		<item>Alan Kulwicki</item>
+		<item>Dave Barry</item>
+		<item>Gilles Villeneuve</item>
+		<item>Murray Walker</item>
+		<item>Hans Stuck</item>
+		<item>Boris Said</item>
+		<item>Mario Andretti</item>
+		<item>Cristiano Da Matta</item>
+		<item>Junior Johnson</item>
+		<item>Jimmy Thompson</item>
+		<item>Damon Hill</item>
+		<item>Colin McRae</item>
+		<item>Jeremy Clarkson</item>
+		<item>Enzo Ferrari</item>
+		<item>Paul Newman</item>
+		<item>Juan Manuel Fangio</item>    
+	</string-array>
+    
+</resources>

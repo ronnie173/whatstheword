@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+  xmlns:android="http://schemas.android.com/apk/res/android" 
+  style="@style/HzVerticalBlock" 
+  android:background="@drawable/hz_dialog_background"
+  android:layout_width="290dp">
+	<ScrollView android:id="@+id/content" style="@style/HzBlock" android:layout_weight="1" />
+	<FrameLayout android:id="@+id/buttons" style="@style/HzBlock"/>
+</LinearLayout>

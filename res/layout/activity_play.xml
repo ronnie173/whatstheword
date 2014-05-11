@@ -1,0 +1,690 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_activity"
+    tools:context=".PlayActivity" >
+
+    <RelativeLayout
+        android:id="@+id/layout_top_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="42dp"
+        android:background="@drawable/bg_actionbar" >
+
+        <ImageView
+            android:id="@+id/button_back"
+            android:layout_width="7dp"
+            android:layout_height="14dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/icon_back" />
+
+        <ImageView
+            android:id="@+id/button_logo"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="2dip"
+            android:layout_toRightOf="@id/button_back"
+            android:background="@drawable/icon_logo" />
+
+        <TextView
+            android:id="@+id/tvTopBarTitle"
+            style="@style/general_top_bar_title"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dip"
+            android:layout_toRightOf="@id/button_logo" />
+
+        <ImageView
+            android:id="@+id/icon_coins"
+            android:layout_width="40dp"
+            android:layout_height="42dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/icon_coin_sign" />
+
+        <TextView
+            android:id="@+id/tvTopBarCoins"
+            style="@style/general_top_bar_coins_value"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/icon_coins"
+            android:text="0" />
+        
+        <ImageView
+            android:id="@+id/icon_leaderboard"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="5dip"
+            android:layout_toLeftOf="@id/tvTopBarCoins"
+            android:layout_centerVertical="true"
+            android:background="@drawable/icon_leaderboard" />
+        
+        <TextView
+            android:id="@+id/tvLevelNums"
+            style="@style/general_top_bar_coins_value"
+            android:layout_centerVertical="true"
+            android:layout_centerInParent="true"
+            android:text="5" />
+    </RelativeLayout>
+	<View android:id="@+id/vStitch" android:background="@drawable/bg_stitch" android:layout_width="fill_parent" android:layout_height="35.0dip" android:layout_below="@id/layout_top_bar" />
+    <LinearLayout
+        android:id="@+id/layout_bottom_letters"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:background="@color/layout_bottom_letters" 
+        android:padding="5dp" >
+
+        <GridView
+            android:id="@+id/gvLetters"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"   
+            android:background="@android:color/transparent"
+            android:divider="@android:color/transparent"
+            android:horizontalSpacing="2dp"
+            android:listSelector="@android:color/transparent"
+            android:numColumns="7"
+            android:columnWidth="60dp"
+            
+            android:verticalSpacing="7dip" >
+        </GridView>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_target_word"
+        android:layout_width="fill_parent"
+        android:layout_height="82dp"
+        android:layout_above="@id/layout_bottom_letters"
+        android:layout_centerHorizontal="true"
+        android:background="@color/layout_target_word" >
+
+        <GridView
+            android:id="@+id/gvTargetWord"
+            android:layout_width="54dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@android:color/transparent"
+            android:columnWidth="54dp"
+            android:divider="@android:color/transparent"
+            android:listSelector="@android:color/transparent"
+            android:stretchMode="columnWidth" >
+        </GridView>
+    </RelativeLayout>
+
+    <LinearLayout 
+        android:id="@+id/layout_target_images"
+        android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="vertical"
+		android:layout_above="@id/layout_target_word"
+        android:layout_below="@id/layout_top_bar" >
+		
+		<LinearLayout
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:layout_weight="1.0"		
+		    android:orientation="horizontal" >
+		
+		    <ImageView
+                android:id="@+id/ivWordImage1"
+                style="@style/play_item_images"
+                android:layout_gravity="bottom|right"
+                android:src="@drawable/ic_launcher" />
+
+            <ImageView
+                android:id="@+id/ivWordImage2"
+                style="@style/play_item_images"
+                android:layout_gravity="bottom|left"
+                android:src="@drawable/ic_launcher" />
+		</LinearLayout>
+		
+		<LinearLayout
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:layout_weight="1.0"
+		    android:orientation="horizontal" >
+		
+		     <ImageView
+                android:id="@+id/ivWordImage3"
+                style="@style/play_item_images"
+                android:layout_gravity="top|right"
+                android:src="@drawable/ic_launcher" />
+
+            <ImageView
+                android:id="@+id/ivWordImage4"
+                style="@style/play_item_images"
+                android:layout_gravity="top|left"
+                android:src="@drawable/ic_launcher" />
+		
+		</LinearLayout>
+		</LinearLayout>
+
+    <ImageView
+        android:id="@+id/ivWordImage"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/layout_target_word"
+        android:layout_below="@id/layout_top_bar"
+        android:background="@drawable/ic_launcher"
+        android:visibility="invisible" />
+
+    <LinearLayout
+        android:id="@+id/layout_images_success"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/layout_target_word"
+        android:layout_below="@id/layout_top_bar"
+        android:background="@color/play_success_shade"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/ivWordImageSuccess"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dip"
+            android:layout_marginTop="20dip"
+            android:scaleType="centerInside"
+            android:src="@drawable/image_success" />
+    </LinearLayout>
+
+    <TextView
+         android:id="@+id/tvSuccessMessage"
+         android:layout_below="@id/layout_top_bar"
+         style="@style/play_success_message"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:gravity="center_horizontal"
+         android:text=""
+         android:visibility="invisible" />
+    <TextView
+         android:id="@+id/tvSuccessSubMessage"
+         android:layout_below="@id/tvSuccessMessage"
+         style="@style/play_success_submessage"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:gravity="center_horizontal"
+         android:text=""
+         android:visibility="invisible" />
+    
+    <TextView
+         android:id="@+id/tvSuccessQuoteMessage"
+         android:layout_below="@id/layout_top_bar"
+         style="@style/play_success_quote_message"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:gravity="fill_horizontal"
+         android:text=""
+         android:visibility="invisible" />
+    <TextView
+         android:id="@+id/tvSuccessQuotePerson"
+         android:layout_below="@id/tvSuccessQuoteMessage"
+         style="@style/play_success_quote_person"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:gravity="right"
+         android:text=""
+         android:visibility="invisible" />
+    
+    <RelativeLayout
+        android:id="@+id/layout_success_summary"
+        android:layout_width="fill_parent"
+        android:layout_height="130dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/play_success_shade"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/layout_success_summary_buttons"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true" >
+
+            <TextView
+                android:id="@+id/tvBack"
+                style="@style/play_success_summary_button_text"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:text="@string/play_summary_button_back"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tvNext"
+                style="@style/play_success_summary_button_text"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:text="@string/play_summary_button_next" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/helper"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_above="@id/layout_success_summary_buttons"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+
+        <LinearLayout
+            android:id="@+id/layout_success_summary_score"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_above="@id/layout_success_summary_buttons"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@id/helper"
+            android:gravity="center_horizontal" >
+
+            <TextView
+                android:id="@+id/tvSummaryScore"
+                style="@style/play_success_summary_score"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="5dp"
+                android:gravity="center"
+                android:text="@string/play_summary_score" />
+
+            <TextView
+                android:id="@+id/tvSummaryScoreVal"
+                style="@style/play_success_summary_scoreVal"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:text="100" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_success_summary_coins"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_above="@id/layout_success_summary_buttons"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@id/helper"
+            android:gravity="center_horizontal" >
+
+            <TextView
+                android:id="@+id/tvSummaryCoins"
+                style="@style/play_success_summary_coins"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="5dp"
+                android:gravity="center"
+                android:text="@string/play_summary_coins" />
+
+            <TextView
+                android:id="@+id/tvSummaryCoinsVal"
+                style="@style/play_success_summary_coinsVal"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:text="100" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_helpers"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/popup_background"
+        android:gravity="center"
+        android:padding="3dip" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@color/popup_layout"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tvPopupTitle"
+                style="@style/popup_layout_title"
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:gravity="center"
+                android:text="@string/getcoins_layout_title" />
+
+            <RelativeLayout
+                android:id="@+id/layout_reveal_letter"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button_selector" >
+
+                <TextView
+                    android:id="@+id/tvRevealLetter"
+                    style="@style/popup_button_title"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/helpers_reveal_letter_title" />
+
+                <ImageView
+                    android:id="@+id/ivRevealCoins"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="2dip"
+                    android:background="@drawable/button_icon_dollar_sign" />
+
+                <TextView
+                    android:id="@+id/tvRevealCoins"
+                    style="@style/popup_button_coins"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/ivRevealCoins"
+                    android:paddingRight="3dp"
+                    android:text="@integer/help_reveal_letter" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_remove_letters"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/button_selector" >
+
+                <TextView
+                    android:id="@+id/tvRemoveLetter"
+                    style="@style/popup_button_title"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/helpers_remove_letter_title" />
+
+                <ImageView
+                    android:id="@+id/ivRemoveCoins"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="2dip"
+                    android:background="@drawable/button_icon_dollar_sign" />
+
+                <TextView
+                    android:id="@+id/tvRemoveCoins"
+                    style="@style/popup_button_coins"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/ivRemoveCoins"
+                    android:paddingRight="3dp"
+                    android:text="@integer/help_remove_letters" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_share"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/button_selector" >
+
+                <TextView
+                    android:id="@+id/tvShare"
+                    style="@style/popup_button_title"
+                    android:duplicateParentState="true"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/helpers_share_title" />
+
+                <ImageView
+                    android:id="@+id/ivShare"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:duplicateParentState="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="2dip"
+                    android:background="@drawable/button_icon_share" />
+            </RelativeLayout>
+            
+            <RelativeLayout
+                android:id="@+id/layout_ask_facebook"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/button_selector" >
+
+                <TextView
+                    android:id="@+id/tvAskFacebook"
+                    style="@style/popup_button_title"
+                    android:duplicateParentState="true"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/helpers_facebook_title" />
+
+                <ImageView
+                    android:id="@+id/ivAskFacebook"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:duplicateParentState="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="2dip"
+                    android:background="@drawable/button_icon_facebook" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_ask_twitter"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/button_selector" >
+
+                <TextView
+                    android:id="@+id/tvAskTwitter"
+                    style="@style/popup_button_title"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/helpers_twitter_title" />
+
+                <ImageView
+                    android:id="@+id/ivAskTwitter"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="2dip"
+                    android:background="@drawable/button_icon_twitter" />
+            </RelativeLayout>
+
+    
+            <TextView
+                android:id="@+id/tvPopupClose"
+                style="@style/popup_layout_close"
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:gravity="center"
+                android:text="@string/popup_layout_close" />
+        </LinearLayout>
+    </RelativeLayout>
+
+<RelativeLayout
+        android:id="@+id/layout_getcoins"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/popup_background"
+        android:gravity="center"
+        android:padding="3dip" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@color/popup_layout"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tvPopupCoinsTitle"
+                style="@style/popup_layout_title"
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:gravity="center"
+                android:text="@string/getcoins_layout_title" />
+
+         <RelativeLayout
+                android:id="@+id/layout_750_coins"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button_selector" >
+
+                <TextView
+                    android:id="@+id/tv750Coins"
+                    style="@style/popup_button_title"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/getcoins_750_coins_title" />
+
+                <TextView
+                    android:id="@+id/tv750CoinsVal"
+                    style="@style/popup_button_coins"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="2dip"
+                    android:text="@string/getcoins_750_coins_val" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_2000_coins"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/button_selector" >
+
+                <TextView
+                    android:id="@+id/tv2000Coins"
+                    style="@style/popup_button_title"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/getcoins_2000_coins_title" />
+
+                <TextView
+                    android:id="@+id/tv2000CoinsVal"
+                    style="@style/popup_button_coins"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="2dip"
+                    android:text="@string/getcoins_2000_coins_val" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_5000_coins"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/button_selector" >
+
+                <TextView
+                    android:id="@+id/tv5000Coins"
+                    style="@style/popup_button_title"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/getcoins_5000_coins_title" />
+
+                <TextView
+                    android:id="@+id/tv5000CoinsVal"
+                    style="@style/popup_button_coins"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="2dip"
+                    android:text="@string/getcoins_5000_coins_val" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_15000_coins"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/button_selector" >
+
+                <TextView
+                    android:id="@+id/tv15000Coins"
+                    style="@style/popup_button_title"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/getcoins_15000_coins_title" />
+
+                <TextView
+                    android:id="@+id/tv15000CoinsVal"
+                    style="@style/popup_button_coins"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="2dip"
+                    android:text="@string/getcoins_15000_coins_val" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_download_coins"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/button_selector"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/tvDownloadCoinsTitle"
+                    style="@style/popup_button_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/getcoins_download_coins_title" />
+
+                <TextView
+                    android:id="@+id/tvDownloadCoinsSubtitle"
+                    style="@style/popup_button_coins"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvDownloadCoinsTitle"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/getcoins_download_coins_subtitle" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tvPopupCoinsClose"
+                style="@style/popup_layout_close"
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:gravity="center"
+                android:text="@string/popup_layout_close" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

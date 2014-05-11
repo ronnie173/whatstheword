@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="marmalade">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/sdk-build/libs/marmalade/android.jar!/" />
+      <root url="jar://$PROJECT_DIR$/sdk-build/libs/marmalade/s3e_release.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

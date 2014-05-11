@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string name="flurry">FKSQSPQ282FYS888789G</string>     
+    <string name="admob_id">a1536eb1589cc21</string>
+    <integer name="swarm_app_id">11402</integer>    
+    <string name="swarm_app_key">5fff57aafb8d0dab2705ae25fbf37586</string>
+    <integer name="swarm_leaderboard_id">16238</integer>  
+        
+</resources>
